@@ -4,7 +4,19 @@
   description: "Project management platform for agile developers"
   uuid: taiga-0
   minimum_rancher_version: v0.51.0
-  questions:
+  questions:    
+    - variable: back_public_port
+      description: "http port to access backend"
+      label: "Backend Public Port"
+      required: true
+      default: "8000"
+      type: "int"
+    - variable: front_public_port
+      description: "http port to access frontend"
+      label: "Front Public Port"
+      required: true
+      default: "80" 
+      type: "int"
 
 
 taiga:
